@@ -17,7 +17,7 @@ export class UserService {
   
   //kullanıcıların tümünü getiren fonksiyon.
   getUsers() : Observable<User[]>{
-    return this.http.get<User[]>(`${this.apiurl}/usersss`)
+    return this.http.get<User[]>(`${this.apiurl}/users`)
     .pipe(
     catchError(this.handleError)
     );
