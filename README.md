@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
- <img src="src/assets/Ekran Görüntüsü (272).png" height="50" width="50" class="avatar" alt="Avatar">
+ <img src="src/assets/Ekran Görüntüsü (272).png" height="500" width="500" class="avatar" alt="Avatar">
 
 ## Development server
 
