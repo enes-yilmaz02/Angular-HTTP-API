@@ -14,14 +14,14 @@ export class UserService {
  
   constructor(private http : HttpClient) { }
 
-  
+  /*
   //kullanıcıların tümünü getiren fonksiyon.
   getUsers() : Observable<User[]>{
     return this.http.get<User[]>(`${this.apiurl}/users`)
     .pipe(
     catchError(this.handleError)
     );
-  }
+  }*/
  
   //kayıtlı ilk kullaıcıyı döndüren fonksiyon
   getUser() : Observable<User>{
@@ -61,7 +61,7 @@ export class UserService {
   private handleError(error:HttpErrorResponse):Observable<never>{
      return throwError({code: 404 , message: 'Page Not Found or File Not Found'});
   }
-  /*
+  
     //kullanıcıların tümünü getiren fonksiyon.
   getUsers() : Observable<User[]>{
     return this.http.get<User[]>(`${this.apiurl}/users`)
@@ -78,5 +78,5 @@ export class UserService {
       })))
     );
   }
-  */
+  
 }
